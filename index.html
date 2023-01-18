@@ -1,56 +1,174 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Uday Sharma</title>
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="icon" href="favicon.ico">
-    </head>
-    <body>
-        <div class="top-container">
-            <img class="top-cloud" src="./images/cloud.png" alt="cloud-img">
-            <h1>I'm Uday.</h1>
-            <h2>a <span class="pro">pro</span>grammer.</h2>
-            <img class="bottom-cloud" src="./images/cloud.png" alt="cloud-img">
-            <img src="./images/mountain.png" alt="mountain-img">
-        </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Hello, It's me Uday</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <ul class="nav-links">
+        <li class="nav-link"><a href="#intro">Home</a></li>
+        <li class="nav-link"><a href="#about">About</a></li>
+        <li class="nav-link"><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
 
-        <div class="middle-container">
-            <div class="profile">
-              <img src="./images/uday.png" alt="my-pic">
-              <h2>Hello.</h2>
-              <p>I am a student studying Computer Science. I am interested in Full Stack Development and Data Structures & Algorithms.</p>
+    <!-- INTRODUCTION -->
+    <section id="intro">
+      <div class="">
+        <h1 class="intro-heading">Hello, World</h1>
+        <p class="intro-subheading code">I'm Uday. I'm a programmer.</p>
+      </div>
+    </section>
+    <!-- ABOUT -->
+    <section id="about">
+      <hr />
+      <div>
+        <h2 class="section-heading">ABOUT</h2>
+        <p class="content">
+          Hardworking and passionate Software Engineer with the ability to
+          multitask and work well with others. Equipped with a diverse and
+          promising skill set. Proficient in an assortment of technologies,
+          including Python, JavaScript, React, and Django. Able to effectively
+          self-manage during independent projects, as well as collaborate as
+          part of a productive team.
+        </p>
+      </div>
+    </section>
+    <!-- PROJECTS -->
+
+    <section id="projects">
+      <hr />
+      <div>
+        <h2 class="section-heading">PROJECTS</h2>
+        <div class="projects">
+          <div class="project-card">
+            <img
+              class="project-img"
+              src="./images/GGSocial-project.png"
+              alt="project photograph"
+            />
+
+            <h3 class="project-name">GGSocial - College App</h3>
+            <p class="project-links code">
+              <a
+                class="project-link"
+                href="https://www.github.com/usyntest/CollegeApp"
+                target="_blank"
+                >Github</a
+              >
+              |
+              <a class="project-link" href="https://usyntest.co" target="_blank"
+                >Live</a
+              >
+            </p>
+            <p class="project-date">Dec 2022 - Jan 2023</p>
+            <div class="project-description code">
+              Full stack social media app made for the students of my college.
+              <ul class="project-description-list">
+                <li class="project-description-list-item">
+                  Website for students to register and log in. Make alerts and
+                  confessions.
+                </li>
+                <li class="project-description-list-item">
+                  Users can also chat with each other in the chat room on the
+                  website.
+                </li>
+                <li class="project-description-list-item">
+                  Made using Python and Django on the back end.
+                </li>
+                <li class="project-description-list-item">
+                  Fully responsive website with styling done using Tailwind CSS.
+                </li>
+              </ul>
             </div>
-            <hr>
-            <div class="skills">
-              <h2>My Skills.</h2>
-              <div class="skill-row">
-                <img class="skill-img-dev" src="./images/development.png" alt="development-img">
-                <h3>Full Stack Development</h3>
-                <p>I am full stack developer proficient in JavaScript, HTML/CSS, Java. I can make front-end layouts with react and REST API's with express</p>
-              </div>
-              <div class="skill-row">
-                <img class="skill-img-problem" src="./images/problem-solving.png" alt="problem-solving-img">
-                <h3>Problem Solving</h3>
-                <p>Good problem solving skills and knowledge of Data Structures and Algorithms</p>
-              </div>
+          </div>
+          <div class="project-card">
+            <img
+              class="project-img"
+              src="./images/netflix-clone-project.png"
+              alt="project photograph"
+            />
+
+            <h3 class="project-name">News App</h3>
+            <p class="project-links code">
+              <a
+                class="project-link"
+                href="https://www.github.com/usyntest/news-app"
+                target="_blank"
+                >Github</a
+              >
+              |
+              <a
+                class="project-link"
+                href="https://usyntest-news-app.netlify.app/"
+                target="_blank"
+                >Live</a
+              >
+            </p>
+            <p class="project-date">Dec 2022 - Jan 2023</p>
+            <div class="project-description code">
+              News website for getting your everyday news.
+
+              <ul class="project-description-list">
+                <li class="project-description-list-item">
+                  News apps made using News API.
+                </li>
+                <li class="project-description-list-item">
+                  Fully responsive website styled using Bootstrap
+                </li>
+                <li class="project-description-list-item">
+                  React used on the frontend
+                </li>
+                <li class="project-description-list-item">
+                  Used Google Firebase for user authentication.
+                </li>
+              </ul>
             </div>
-            <hr>
-            <div class="contact-me">
-              <h2>Get In Touch</h2>
-              <h3>If you want to work together</h3>
-              <p>If you want to work together on a project, I'm open to learn new technologies or maybe need a study partner.</p>
-              <a class="btn" href="mailto:itsudayy@gmail.com" target="_blank">CONTACT ME</a>
+          </div>
+          <div class="project-card">
+            <img
+              class="project-img"
+              src="./images/netflix-clone-project.png"
+              alt="project photograph"
+            />
+
+            <h3 class="project-name">Netflix Clone</h3>
+            <p class="project-links code">
+              <a
+                class="project-link"
+                href="https://www.github.com/usyntest/netflix-clone"
+                target="_blank"
+                >Github</a
+              >
+              |
+              <a
+                class="project-link"
+                href="https://usyntest-netflix.netlify.app/"
+                target="_blank"
+                >Live Project</a
+              >
+            </p>
+            <p class="project-date">May 2021 - May 2021</p>
+            <div class="project-description code">
+              A Netflix Clone made using React.
+              <ul class="project-description-list">
+                <li class="project-description-list-item">
+                  Front-end development is done using React
+                </li>
+                <li class="project-description-list-item">
+                  Fully responsive website made using vanilla CSS
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
-          
-          
-        <div class="bottom-container">
-          <a class="footer-link" href="https://www.github.com/usyntest" target="_blank">GitHub</a>  
-          <a class="footer-link" href="https://twitter.com/usyntest" target="_blank">Twitter</a>
-          <a class="footer-link" href="https://www.linkedin.com/in/usyntest/" target="_blank">LinkedIn</a>
-          <p>© 2022 Uday Sharma</p>
-        </div>
-          
-    </body>
+      </div>
+    </section>
+  </body>
 </html>

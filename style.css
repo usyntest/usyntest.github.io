@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Source+Code+Pro:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #1e1e1e;
+  color: #b1cdec;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* UNIVERSAL DESIGNS */
+a {
+  text-decoration: none;
+  color: #b1cdec;
+}
+
+hr {
+  border: dotted 10px #eaf6f6;
+  width: 7%;
+  border-style: dotted none none;
+  margin: 100px auto;
+}
+
+.code {
+  font-family: "Source Code Pro";
+}
+
+.section-heading {
+  letter-spacing: 5px;
+  width: fit-content;
+  margin: 50px auto;
+  padding: 0 10px;
+  color: #eaf6f6;
+}
+
+/* NAVBAR */
+.nav-links {
+  background-color: rgba(234, 246, 246, 0.6);
+  background: linear-gradient(
+    90deg,
+    rgba(234, 246, 246, 0.1) 35%,
+    rgba(177, 205, 236, 0.1) 65%
+  );
+  backdrop-filter: blur(5px);
+}
+
+.nav-links {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  border-bottom: 2px #b1cdec solid;
+  justify-content: center;
+}
+
+.nav-link {
+  list-style: none;
+  margin: 15px 25px;
+}
+
+/* INTRO */
+#intro {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.intro-heading {
+  font-size: 2rem;
+}
+
+.intro-subheading {
+  font-size: 1.25rem;
+}
+
+/* ABOUT */
+
+.content {
+  width: 40%;
+  margin: 50px auto;
+  text-align: center;
+  line-height: 25px;
+  padding: 0 20px;
+}
+
+/* PROJECTS */
+.projects {
+  display: flex;
+  margin: 0 50px;
+}
+
+.project-card {
+  margin: 30px;
+  padding: 20px;
+  background-color: rgba(234, 246, 246, 0.6);
+  background: linear-gradient(
+    90deg,
+    rgba(234, 246, 246, 0.1) 35%,
+    rgba(177, 205, 236, 0.1) 65%
+  );
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: #b1cdec 1px solid;
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.project-name {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.project-links {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.project-link {
+  text-decoration: underline;
+}
+
+.project-date {
+  color: #eaf6f6;
+  text-align: center;
+  margin: 10px 0;
+  font-size: 0.9rem;
+}
+
+.project-description {
+  line-height: 25px;
+  text-align: center;
+}
+
+.project-description-list {
+  padding-left: 20px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.project-description-list-item {
+  margin: 15px 0;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 720px) {
+  /* ABOUT */
+  .content {
+    width: 100%;
+  }
+
+  /* PROJECTS */
+  .projects {
+    flex-wrap: wrap;
+    margin: 0;
+  }
+}
