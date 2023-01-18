@@ -95,6 +95,7 @@ hr {
   margin: 0 50px;
 }
 
+/* PROJECT CARD */
 .project-card {
   margin: 30px;
   padding: 20px;
@@ -106,7 +107,8 @@ hr {
   );
   backdrop-filter: blur(5px);
   border-radius: 10px;
-  border: #b1cdec 1px solid;
+  border: #b1cdec 1px solid;  
+  box-shadow: rgba(234, 246, 246, 0.6) 0px 5px 15px;
 }
 
 .project-img {
@@ -152,7 +154,7 @@ hr {
 }
 
 /* RESPONSIVE DESIGN */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 900px) {
   /* ABOUT */
   .content {
     width: 100%;
