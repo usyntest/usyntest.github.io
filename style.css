@@ -17,6 +17,21 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+/* SROLLBAR DESIGNS */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(234, 246, 246, 0.6);
+  background: linear-gradient(
+    90deg,
+    rgba(234, 246, 246, 0.1) 35%,
+    rgba(177, 205, 236, 0.1) 65%
+  );
+}
+
 /* UNIVERSAL DESIGNS */
 a {
   text-decoration: none;
@@ -93,6 +108,82 @@ hr {
   padding: 0 20px;
 }
 
+.sub-section {
+  margin: 100px 0;
+}
+
+/* RESUME */
+.sub-heading {
+  letter-spacing: 5px;
+  width: fit-content;
+  margin: 50px auto;
+  color: #eaf6f6;
+}
+
+.resume-block {
+  /* min-width: 25%; */
+  max-width: 200px;
+  height: 75px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: rgba(234, 246, 246, 0.6);
+  background: linear-gradient(
+    90deg,
+    rgba(234, 246, 246, 0.1) 35%,
+    rgba(177, 205, 236, 0.1) 65%
+  );
+  backdrop-filter: blur(5px);
+  box-shadow: rgba(177, 205, 236, 0.8) 0px 5px 15px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.resume-download {
+  height: 100%;
+}
+
+.resume-content {
+  padding-left: 15px;
+}
+
+.resume-content > p,
+.social-block > p {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  padding-bottom: 1.5px;
+}
+
+/* SOCIALS */
+.socials-block {
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.social-block {
+  height: 75px;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 50px;
+  background-color: rgba(234, 246, 246, 0.6);
+  background: linear-gradient(
+    90deg,
+    rgba(234, 246, 246, 0.1) 35%,
+    rgba(177, 205, 236, 0.1) 65%
+  );
+  backdrop-filter: blur(5px);
+  box-shadow: rgba(177, 205, 236, 0.8) 0px 5px 15px;
+  padding-right: 20px;
+  border-radius: 10px;
+}
+
+.social-icon {
+  height: 100%;
+}
+
 /* PROJECTS */
 .projects {
   display: flex;
@@ -112,7 +203,7 @@ hr {
   backdrop-filter: blur(5px);
   border-radius: 10px;
   border: #b1cdec 1px solid;
-  box-shadow: rgba(234, 246, 246, 0.6) 0px 5px 15px;
+  box-shadow: rgba(177, 205, 236, 0.8) 0px 10px 15px;
 }
 
 .project-img {
@@ -168,5 +259,18 @@ hr {
   .projects {
     flex-wrap: wrap;
     margin: 0;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  /* SOCIALS */
+  .socials-block {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .social-block {
+    width: 200px;
+    margin: 25px auto;
   }
 }
