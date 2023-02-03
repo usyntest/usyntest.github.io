@@ -66,6 +66,7 @@ hr {
     rgba(177, 205, 236, 0.1) 65%
   );
   backdrop-filter: blur(5px);
+  z-index: 1000;
 }
 
 .nav-links {
