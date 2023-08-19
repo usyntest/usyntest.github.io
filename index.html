@@ -2,232 +2,68 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
-    <link href="./style.css" rel="stylesheet" />
-    <title>Hello, It's me Uday</title>
+    <title>Uday Sharma's Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="./index.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- NAVBAR -->
-    <nav>
-      <ul class="nav-links">
-        <li class="nav-link"><a href="#intro">Home</a></li>
-        <li class="nav-link"><a href="#about">About</a></li>
-        <li class="nav-link"><a href="#projects">Projects</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <!-- <nav>
+        <ul class="nav-links">
+          <li>about</li>
+          <li>contact</li>
+        </ul>
+      </nav> -->
 
-    <!-- INTRODUCTION -->
-    <section id="intro">
-      <div class="">
-        <h1 class="intro-heading">Hello, World</h1>
-        <p class="intro-subheading code">I'm Uday. I'm a programmer.</p>
-      </div>
-    </section>
-    <!-- ABOUT -->
-    <section id="about">
-      <hr />
-      <div>
-        <h2 class="section-heading">ABOUT</h2>
-        <p class="content">
-          Hardworking and passionate Software Engineer with the ability to
-          multitask and work well with others. Equipped with a diverse and
-          promising skill set. Proficient in an assortment of technologies,
-          including Python, JavaScript, React, and Django. Able to effectively
-          self-manage during independent projects, as well as collaborate as
-          part of a productive team.
+      <section id="about">
+        <h1 class="about-heading"><span>hey!</span> i'm uday</h1>
+        <p class="about-description">
+          I'm a driven computer science student at the University of Delhi,
+          passionate about machine learning and software development. Currently
+          a research intern, eager for new horizons.
         </p>
-        <div class="resume sub-section">
-          <h3 class="sub-heading">RESUME</h3>
-          <a href="./assets/Resume.pdf" target="_blank">
-            <div class="resume-block">
-              <img
-                class="resume-download"
-                src="./assets/download-icon.png"
-                alt="download icon"
-              />
-              <div class="resume-content">
-                <p>Resume.pdf</p>
-              </div>
-            </div>
-          </a>
+        <p class="about-description">
+          As I progress academically, I'm refining problem-solving and exploring
+          machine learning. With an eye on participating in GSOC'24. Feel
+          welcome to connect with me via email for new ventures.
+        </p>
+
+        <div class="links">
+          <a class="link" title="Github" href="https://github.com/usyntest"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a class="link" title="Twitter" href="https://twitter.com/usyntest"
+            ><i class="fa-brands fa-square-twitter"></i
+          ></a>
+          <a class="link" title="Email" href="mailto:itsudayy@gmail.com"
+            ><i class="fa-regular fa-envelope"></i
+          ></a>
+          <a class="link" title="Resume" href=""
+            ><i class="fa-regular fa-file"></i
+          ></a>
         </div>
-        <div class="socials">
-          <h3 class="sub-heading">SOCIALS</h3>
-          <div class="socials-block">
-            <a href="https://www.github.com/usyntest" target="_blank">
-              <div class="social-block">
-                <img
-                  class="social-icon"
-                  src="./assets/github-icon.png"
-                  alt=""
-                />
-                <p>Github</p>
-              </div>
-            </a>
-            <a href="https://www.linkedin.com/in/usyntest" target="_blank">
-              <div class="social-block">
-                <img
-                  class="social-icon"
-                  src="./assets/linkedin-icon.png"
-                  alt=""
-                />
-                <p>Linkedin</p>
-              </div>
-            </a>
-            <a href="mailto:itsudayy@gmail.com" target="_blank">
-              <div class="social-block">
-                <img class="social-icon" src="./assets/email-icon.png" alt="" />
-                <p>Email</p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- PROJECTS -->
+      </section>
+    </div>
 
-    <section id="projects">
-      <hr />
-      <div>
-        <h2 class="section-heading">PROJECTS</h2>
-        <div class="projects">
-          <div class="project-card">
-            <img
-              class="project-img"
-              src="./assets/GGSocial-project.png"
-              alt="project photograph"
-            />
+    <script>
+      const links = document.querySelectorAll(".link > i");
 
-            <h3 class="project-name">GGSocial - College App</h3>
-            <p class="project-links code">
-              <a
-                class="project-link"
-                href="https://www.github.com/usyntest/CollegeApp"
-                target="_blank"
-                >Github</a
-              >
-              |
-              <a class="project-link" href="https://usyntest.co" target="_blank"
-                >Live</a
-              >
-            </p>
-            <p class="project-date">Dec 2022 - Jan 2023</p>
-            <div class="project-description code">
-              Full stack social media app made for the students of my college.
-              <ul class="project-description-list">
-                <li class="project-description-list-item">
-                  Developed an exclusive web app for college students
-                </li>
-                <li class="project-description-list-item">
-                  Using Django framework and MVT architecture
-                </li>
-                <li class="project-description-list-item">
-                  Tailwind CSS for responsive design
-                </li>
-                <li class="project-description-list-item">
-                  Features: alerts, anonymous confessions, socialization &
-                  connection
-                </li>
-                <li class="project-description-list-item">
-                  Implemented robust and secure backend
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="project-card">
-            <img
-              class="project-img"
-              src="./assets/news-app-project.png"
-              alt="project photograph"
-            />
+      for (let i = 0; i < links.length; i++) {
+        links[i].addEventListener("mouseover", () => {
+          links[i].classList.add("fa-bounce");
+        });
 
-            <h3 class="project-name">News App</h3>
-            <p class="project-links code">
-              <a
-                class="project-link"
-                href="https://www.github.com/usyntest/news-app"
-                target="_blank"
-                >Github</a
-              >
-              |
-              <a
-                class="project-link"
-                href="https://usyntest-news-app.netlify.app/"
-                target="_blank"
-                >Live</a
-              >
-            </p>
-            <p class="project-date">Dec 2022 - Jan 2023</p>
-            <div class="project-description code">
-              News website for getting your everyday news.
-
-              <ul class="project-description-list">
-                <li class="project-description-list-item">
-                  Developed news app using React.
-                </li>
-                <li class="project-description-list-item">
-                  Implemented registration & auth using Firebase
-                </li>
-                <li class="project-description-list-item">
-                  Utilized Bootstrap for responsive design
-                </li>
-                <li class="project-description-list-item">
-                  Delivered seamless user experience for daily news updates
-                </li>
-                <li class="project-description-list-item">Utilized modern tech for high-performance, visually appealing.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="project-card">
-            <img
-              class="project-img"
-              src="./assets/netflix-clone-project.png"
-              alt="project photograph"
-            />
-
-            <h3 class="project-name">Netflix Clone</h3>
-            <p class="project-links code">
-              <a
-                class="project-link"
-                href="https://github.com/usyntest/netflix-clone-react"
-                target="_blank"
-                >Github</a
-              >
-              |
-              <a
-                class="project-link"
-                href="https://usyntest-netflix.netlify.app/"
-                target="_blank"
-                >Live Project</a
-              >
-            </p>
-            <p class="project-date">May 2021 - May 2021</p>
-            <div class="project-description code">
-              Web app mimicking the famous streaming service Netflix
-              <ul class="project-description-list">
-                <li class="project-description-list-item">
-                  Developed a Netflix clone using React
-                </li>
-                <li class="project-description-list-item">
-                  Implemented responsive design for all devices
-                </li>
-                <li class="project-description-list-item">
-                  Enabled browsing & playing movie trailers
-                </li>
-                <li class="project-description-list-item">
-                  Utilized modern tech for high-performance, visually appealing
-                  app
-                </li>
-                <li class="project-description-list-item">
-                  Mimicked Netflix's functionality & design.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        links[i].addEventListener("mouseout", () => {
+          links[i].classList.remove("fa-bounce");
+        });
+      }
+    </script>
   </body>
 </html>
