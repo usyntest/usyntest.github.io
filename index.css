@@ -10,7 +10,6 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #f9f7f7;
   color: #112d4e;
-  text-transform: lowercase;
 }
 
 .container {
@@ -80,6 +79,10 @@ nav {
 @media screen and (max-width: 720px) {
     .about-heading {
         font-size: 3rem;
+    }
+
+    .about-description {
+      text-align: center;
     }
 
     .links {
