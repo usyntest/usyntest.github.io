@@ -3,67 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Uday Sharma's Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link href="./index.css" rel="stylesheet" />
+    <style>
+      body {
+        margin: 5% auto;
+        background: #f2f2f2;
+        color: #444444;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.8;
+        text-shadow: 0 1px 0 #ffffff;
+        max-width: 73%;
+      }
+      code {
+        background: white;
+      }
+      a {
+        border-bottom: 1px solid #444444;
+        color: #444444;
+        text-decoration: none;
+      }
+      a:hover {
+        border-bottom: 0;
+      }
+    </style>
+    <title>Uday Sharma</title>
   </head>
   <body>
-    <div class="container">
-      <!-- <nav>
-        <ul class="nav-links">
-          <li>about</li>
-          <li>contact</li>
-        </ul>
-      </nav> -->
+    <h1>Hello, I'm Uday Sharma</h1>
+    <p>
+      I am a student studying Computer Science at University of Delhi, India. I
+      love to explore the wide world of possibilities of computers and the
+      challenges they bring with them. Currently I exploring the field of
+      Machine Learning, which I am finding very interesting. Here are some
+      projects that I am working on
+    </p>
+    <ul>
+      <li>
+        <a href="https://github.com/usyntest/krypton">Krypton</a>, web browser I
+        am making from scratch.
+      </li>
+      <li>
+        <a href="https://github.com/usyntest/ggsocial">GGS Social</a>, social
+        media app for the students of my college.
+      </li>
+    </ul>
 
-      <section id="about">
-        <h1 class="about-heading"><span>Hey!</span> I'm uday</h1>
-        <p class="about-description">
-          I'm a driven computer science student at the University of Delhi,
-          passionate about machine learning and software development. Currently
-          a research intern, eager for new horizons.
-        </p>
-        <p class="about-description">
-          As I progress academically, I'm refining problem-solving and exploring
-          machine learning. With an eye on participating in GSOC'24. Feel
-          welcome to connect with me via email for new ventures.
-        </p>
+    <p>
+      I am also currently trying to learn German. Common aliases I use are:
+      izthatvodka and usyntest.
+    </p>
 
-        <div class="links">
-          <a class="link" title="Github" href="https://github.com/usyntest"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <a class="link" title="Twitter" href="https://twitter.com/usyntest"
-            ><i class="fa-brands fa-square-twitter"></i
-          ></a>
-          <a class="link" title="Email" href="mailto:itsudayy@gmail.com"
-            ><i class="fa-regular fa-envelope"></i
-          ></a>
-          <a class="link" title="Resume" href=""
-            ><i class="fa-regular fa-file"></i
-          ></a>
-        </div>
-      </section>
-    </div>
+    <p>Feel welcome to connect with me via email for new ventures.</p>
 
-    <script>
-      const links = document.querySelectorAll(".link > i");
+    <ul>
+      <li><a href="https://github.com/usyntest">Github</a></li>
+      <li><a href="https://www.linkedin.com/in/usyntest">Linkedin</a></li>
+      <li>Email: <a href="mailto:itsudayy@gmail.com">itsudayy@gmail.com</a></li>
+    </ul>
 
-      for (let i = 0; i < links.length; i++) {
-        links[i].addEventListener("mouseover", () => {
-          links[i].classList.add("fa-bounce");
-        });
-
-        links[i].addEventListener("mouseout", () => {
-          links[i].classList.remove("fa-bounce");
-        });
-      }
-    </script>
+    <footer>
+      Design inspired by
+      <a href="https://evenbettermotherfucking.website/">here</a>
+    </footer>
   </body>
 </html>
