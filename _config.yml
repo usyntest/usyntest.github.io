@@ -6,16 +6,16 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: Edit _config.yml to set your title!
-description: This is where the description of your site will go. You should change it by editing the _config.yml file. It can be as long as you like! Happy blogging... ❤
-github_username: jph00
+title: Uday Sharma
+description: "Exploring the intersection of technology, research, and creativity - join me on a journey through computer science and personal insights."
+github_username: usyntest
 
 # Email and twitter are optional:
-email:
-twitter_username:
-
+email: itsudayy@gmail.com
+twitter_username: usyntest
+`
 # Set this to true to get LaTeX math equation support
-use_math:
+use_math: true
 
 # Add your Google Analytics ID here if you have one and want to use it
 google_analytics:
@@ -29,7 +29,7 @@ plugins:
   - jekyll-github-metadata
 
 titles_from_headings:
-  enabled:     true
+  enabled: true
   strip_title: true
   collections: true
 
