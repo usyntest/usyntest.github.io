@@ -4,10 +4,32 @@ My name is Uday Sharma, I am a Computer Science student at the University of Del
 
 At the time of writing this I am currently collecting and working with data at a large scale (100M+ points). I also take an interest in the vision side of thing, something about making computer see the world we see really excites me. 
 
+Here's the table of contents:
+
+1. TOC
+{:toc}
+
+## Education
+
+**B.Sc. (Hons) Computer Science**  
+University of Delhi | CGPA - 7.67/10
+
+*Relevant Coursework*
+
+| Course | Grade |
+|-|-|
+| Object Oriented Programming using C++ | O |
+| Data Structures | A+ |
+| Operating Systems | A+ |
+| Data Mining | A+ |
+| Database Management Systems | A |
+| Computer Networks | A |
+| Probability for Computing | A |
+| Programming using Python | A |
+
 ## Experience
 
-### Research Engineer Intern
-
+### Research Engineer Intern  
 SimPPL
 
 - Spearheaded the development of Arbiter, the MVP and flagship social media listening tool, presented the tool to Nest Mongolia in a workshop on Misinformation. 
