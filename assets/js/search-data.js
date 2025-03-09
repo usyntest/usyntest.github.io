@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/assets/pdf/resume.pdf";
           },
-        },{id: "post-introduction-to-vector-databases",
+        },{id: "post-deploying-applications-using-nginx-and-docker",
+      
+        title: "Deploying Applications Using Nginx and Docker",
+      
+      description: "A beginner-friendly guide to deploying a Next.js frontend, FastAPI backend, and PostgreSQL database using Docker and Nginx.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/deployment-docker/";
+        
+      },
+    },{id: "post-introduction-to-vector-databases",
       
         title: "Introduction to Vector Databases",
       
@@ -48,7 +59,53 @@ ninja.data = [{
           window.location.href = "/blog/2024/vector-databases/";
         
       },
-    },{
+    },{id: "post-understanding-artificial-neural-networks",
+      
+        title: "Understanding Artificial Neural Networks",
+      
+      description: "A description of how artificial neural networks work at code and what is the idea behind them.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2024/neural-networks/";
+        
+      },
+    },{id: "projects-ggs-social",
+          title: 'GGS Social',
+          description: "Created a college social media platform using Python (Django) and TailwindCSS and deployed it.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/ggs-social/";
+            },},{id: "projects-higgs-boson-ml",
+          title: 'Higgs Boson ML',
+          description: "Leveraging machine learning techniques to analyze ATLAS Higgs Boson datasets.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/higgs-boson-ml/";
+            },},{id: "projects-little-computer",
+          title: 'Little Computer',
+          description: "An implementation of the LC-3 VM, a 16-bit educational computer architecture from scratch in C.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/lc3-vm/";
+            },},{id: "projects-micrograd",
+          title: 'Micrograd',
+          description: "A lightweight, educational autograd engine and neural network library implemented in pure Python.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/micrograd/";
+            },},{id: "projects-mojster",
+          title: 'Mojster',
+          description: "A real-time analytics dashboard for monitoring content trends and user engagement on the Moj platform.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/mojster/";
+            },},{id: "projects-nanogpt",
+          title: 'NanoGPT',
+          description: "A minimal, efficient implementation of GPT using PyTorch, optimized for small-scale training and fine-tuning.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/nanogpt/";
+            },},{id: "projects-realtime-chat",
+          title: 'Realtime Chat',
+          description: "A real-time chat application written in C from scratch using socket and network programming.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/realtime-chat-c/";
+            },},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
