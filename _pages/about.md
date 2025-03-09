@@ -18,10 +18,10 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am an undergraduate student at the University of Delhi, pursuing a degree in Computer Science with a minor in Mathematics, currently in my third year. I am passionate about solving complex problems through the applications of Natural Language Processing (NLP) and Computer Vision.
+I am Uday Sharma, a Computer Science student at the University of Delhi, passionate about machine learning, large-scale data processing, and high-performance computing. My work spans software engineering, AI research, and system optimization, where I focus on building scalable architectures, designing ML pipelines, and working with distributed systems.
 
-Currently, I am working as a Research Engineer Intern at [SimPPL](), where I am developing a social media listening tool called [Arbiter](), which integrates multiple platforms for insightful data analysis.
+Currently, I am a Research Engineer Intern at [SimPPL](https://simppl.org), where I led the development of [Arbiter](https://arbiter.simppl.org), a real-time social listening tool that processes billions of social media posts. I designed and optimized its data pipelines, ML-driven analytics, and vector search infrastructure, reducing cloud costs by 75% and cutting query times from minutes to under a second. Beyond this, my research in biometrics and medical imaging has led to facial recognition systems at [IISER Bhopal]() and a deep learning model for COVID-19 detection, published in an [IEEE conference paper]().
 
-Previously, I carried out research under [Dr. Vandana Kalra]() and [Dr. Megha Ummat](), focusing on the analysis of various computational techniques, including deep learning and traditional machine learning approaches, for detecting COVID-19 from X-ray images.
+I have experience working with **full-stack development**, **cloud computing**, and **database engineering**. My portfolio showcases my projects, research, and technical contributions in AI, software development, and computational sciences.
 
-I also interned at the [Indian Institute of Science Education and Research]() under [Dr. Akshay Aggarwal](), where I explored the field of Biometrics and gained insights into identity verification technologies.
+I am always looking for exciting research opportunities, collaborations, and challenging engineering problems to solve. Feel free to explore my work and connect with me!
