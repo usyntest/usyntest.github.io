@@ -25,73 +25,30 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "A growing collection of your cool projects.",
+          description: "A growing collection of my projects.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "nav-cv",
-          title: "cv",
-          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
+        },{id: "nav-resume",
+          title: "resume",
+          description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/cv/";
+            window.location.href = "/assets/pdf/resume.pdf";
           },
         },{id: "post-introduction-to-vector-databases",
       
         title: "Introduction to Vector Databases",
       
-      description: "Vector databases are a bit complex to understand, this blog is a gentle introduction to get started with them",
+      description: "Modern applications require more than just exact search—they need similarity search, and vector databases enable this at scale.",
       section: "Posts",
       handler: () => {
         
           window.location.href = "/blog/2024/vector-databases/";
         
       },
-    },{id: "post-understanding-artificial-neural-networks-part-2",
-      
-        title: "Understanding Artificial Neural Networks Part 2",
-      
-      description: "A brief description of how artificial neural networks work part 2",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/neural-networks-2/";
-        
-      },
-    },{id: "post-understanding-artificial-neural-networks-part-1",
-      
-        title: "Understanding Artificial Neural Networks Part 1",
-      
-      description: "A brief description of how artificial neural networks work part 1",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/neural-networks-1/";
-        
-      },
-    },{id: "post-how-to-make-fast-http-requests",
-      
-        title: "How to make fast http requests?",
-      
-      description: "Making requests synchronously can take time, how to make this process faster?",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/fast-requests/";
-        
-      },
-    },{id: "projects-micrograd",
-          title: 'Micrograd',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-mojster",
-          title: 'Mojster',
-          description: "a project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{
+    },{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
