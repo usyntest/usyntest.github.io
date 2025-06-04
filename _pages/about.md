@@ -2,11 +2,11 @@
 layout: about
 title: about
 permalink: /
-subtitle: by Uday Sharma, <a href='#'>University of Delhi</a>.
+subtitle: Computer Science, <a href='#'>University of Delhi</a>
 
 profile:
   align: right
-  image: prof_pic.HEIC
+  image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   # more_info: >
   #   <p>555 your office number</p>
@@ -18,25 +18,12 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-# Uday Sharma  
-**Computer Science Student | AI & Systems Researcher | Software Engineer**  
+I am Uday Sharma a final year student at University of Delhi working towards my **Bachelors (Honors with Research) in Computer Science**. I am passionate about machine learning, large-scale data processing, and high-performance computing.
 
-I am a **Computer Science student at the University of Delhi**, passionate about **machine learning, large-scale data processing, and high-performance computing**. My work spans **AI research, software engineering, and system optimization**, with a focus on **scalable architectures, ML pipelines, and distributed systems**.  
+I am currently working at [CERN]() where I am developing [NeutrinoReview]() a Systematic Review AI Tool aimed at automating literature reviews.
 
-#### Professional Experience  
-Currently, I am a **Research Engineer Intern** at [SimPPL](https://simppl.org), where I led the development of [Arbiter](https://arbiter.simppl.org) — a **real-time social listening tool** processing billions of social media posts. I designed and optimized its **data pipelines, ML-driven analytics, and vector search infrastructure**, reducing cloud costs by **75%** and cutting query times from **minutes to under a second**.  
+Previously I was working as a Research Engineer at [SimPPL]() where I was the Technical Lead for [Arbiter](), a social listening tool utilized by civic organizations like Nest fact-checkers in Mongolia, in collaboration with DW Germany.
 
----
+Additionally, I have also worked as a Research Intern at [IISER Bhopal]() and [Sri Guru Gobind Singh College of Commerce]() in the fields of Biometrics and Medical Image Analysis respectively.
 
-#### Technical Expertise  
-I have hands-on experience in **full-stack development, cloud computing, and database engineering**, specializing in:  
-- **AI & ML Systems** – Scalable model training, ML inference pipelines, and vector search.  
-- **Software & Backend Engineering** – Building high-performance, distributed systems.  
-- **Cloud & DevOps** – Optimizing infrastructure for cost-efficient deployment.  
-
-#### Research & Publications  
-- **Biometrics & Facial Recognition** – Developed facial recognition systems at **[IISER Bhopal]()**.  
-- **Medical Imaging & AI** – Built a deep learning model for **COVID-19 detection**, published in an **[IEEE conference]()**.  
-
-#### Get in Touch  
-I am always open to **research collaborations, exciting engineering challenges, and innovative projects**. Feel free to explore my **[portfolio]()** and connect with me!  
+Right now I am looking for potential advisors and ideas for my Bachelor Thesis. If you have a good idea, I would love to implement it. 
