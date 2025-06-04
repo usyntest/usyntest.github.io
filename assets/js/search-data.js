@@ -37,7 +37,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/assets/pdf/resume.pdf";
           },
-        },{id: "post-deploying-applications-using-nginx-and-docker",
+        },{id: "post-from-delhi-to-geneva-my-journey-to-cern",
+      
+        title: "From Delhi to Geneva: 
+My Journey to CERN",
+      
+      description: "My journey of how I got selected as a Summer Student at CERN for the batch of 2025 out of 10k people from around the world.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/cern-selection/";
+        
+      },
+    },{id: "post-deploying-applications-using-nginx-and-docker",
       
         title: "Deploying Applications Using Nginx and Docker",
       
