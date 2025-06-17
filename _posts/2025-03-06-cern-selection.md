@@ -52,9 +52,9 @@ After joining SimPPL, I started working as a solo developer on a project called 
 
 I developed data pipelines from multiple social media platforms, optimized these pipelines, created an efficient backend, and integrated it with a frontend. I also built a semantic search infrastructure to search over billions of data points for more accurate social media analysis.
 
-In 4 months, I developed an initial MVP and pitched it to Nest fact-checkers in Mongolia, in collaboration with DW Germany. Soon, instead of being the sole developer, we had a team for the project, and my role evolved into that of Technical Lead—facilitating the integration of features like an AI assistant, in-house topic modeling scatter plots, caching mechanisms for faster results, better storage architecture for large-scale data, and designing efficient database schemas.
+In just four months, I developed the initial MVP and presented a live demo of the platform to Nest fact-checkers and civil society organizations in Mongolia, during capacity-building workshops led by SimPPL in partnership with DW Germany. Soon, instead of being the sole developer, we had a team for the project, and my role evolved into that of Technical Lead—facilitating the integration of features like an AI assistant, in-house topic modeling scatter plots, caching mechanisms for faster results, better storage architecture for large-scale data, and designing efficient database schemas.
 
-Apart from the real-world technical challenges, I also learned soft skills like how to design features without over-engineering simple problems. I also learned how to present any kind of material—whether to seasoned engineers or to people who are not technically literate.
+Apart from the real-world technical challenges, I also learned soft skills like how to design features without over-engineering simple problems. I also learned how to present to any audience—whether to seasoned engineers or to people who are not technically literate.
 
 I am very grateful for these soft skills I picked up at SimPPL, especially since I had no one before who told me how to ask good questions, design solutions, research topics, and present them—and the best one of all: "what are cc and bcc in an email?" (Thank you, Dhara!).
 
@@ -62,13 +62,11 @@ I am very grateful for these soft skills I picked up at SimPPL, especially since
 ## Applying to CERN: The Vulnerable Truth
 My introduction to CERN was through the movie Angels & Demons, and I was fascinated by it—but never thought I’d end up working there. In a one-to-one session with Swapneel, I got introduced to the program since he had also done it during his undergrad. That’s when he told me, “We should help you prepare an application for it.” It was then that I knew I had struck gold in terms of the people around me.
 
-Initially, I believed it was literally impossible to get an international internship without coming from one of the IITs—and especially not being formally trained in Physics. And if I’m being honest, I wasn’t going to apply at all. It was only after Swapneel convinced me that I finally did.
-
-I made my application on the last day of the deadline, having my materials checked and reviewed by Swapneel and Dhara.
+Initially, I believed it was literally impossible to get an international internship without coming from one of the IITs—and especially not being formally trained in Physics. And if I’m being honest, I wasn’t going to apply at all. It was only after Swapneel convinced me that I finally did. I made my application on the last day of the deadline.
 
 On March 7th, I received an email for an interview with a potential supervisor, which made me go crazy with anxiety, since interviews are very rare in the selection process for the Summer Student Program. Over the weekend, I studied everything I could about the project the interview was for—made system design diagrams, read previous years’ student reports for the project, and probably went over my 3-minute introduction at least 100 times, which took me around 12 hours (not kidding).
 
-I got cold feet the night before the interview and had to call Swapneel because I was so nervous and couldn’t handle the stress. After that, he and I had a long talk, which gave me some clarity. On May 10th, I gave the interview for the position and was very happy with what I said—although I wished I could’ve said a lot more, but time didn’t allow.
+I got cold feet the night before the interview and was very nervous as this was a very big interview for me. After that, he and I had a long talk, which gave me some clarity. On May 10th, I gave the interview for the position and was very happy with what I said—although I wished I could’ve said a lot more, but time didn’t allow.
 
 ## Acceptance and What It Means
 
