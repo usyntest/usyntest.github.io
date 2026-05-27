@@ -1,0 +1,301 @@
+<!doctype html>
+<!--
+  ══════════════════════════════════════════════════════
+  BLOG POST TEMPLATE
+  ══════════════════════════════════════════════════════
+
+  HOW TO USE:
+  1. Duplicate this file: cp post-template.html your-post-slug.html
+  2. Fill in everything between the ← EDIT → markers
+  3. Add a link in blog/index.html pointing to your new file
+  4. Delete this comment block
+
+  SECTIONS AVAILABLE IN POST BODY:
+    <p>            — paragraph
+    <h2>           — section heading (all-caps label style)
+    <h3>           — subsection heading (serif, large)
+    <h4>           — minor heading (sans, small)
+    <pre><code>    — code block (dark background)
+    <code>         — inline code
+    <blockquote>   — pull quote
+    <figure>       — image with caption
+    <div class="math-block"> — centred equation display
+    <div class="callout tip"> — tip / note box
+    <ul> <ol>      — lists
+    <strong> <em>  — bold / italic
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ← EDIT: update title and description for each post → -->
+    <meta
+      name="description"
+      content="How normalizing flows detect anomalies in LHC collision data, and what knowledge distillation has to do with it."
+    />
+    <title>
+      How Normalizing Flows Detect New Physics at the LHC — Uday Sharma
+    </title>
+    <!-- ← END EDIT → -->
+
+    <!-- KaTeX for math rendering (optional — remove if unused) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"
+      onload="
+        renderMathInElement(document.body, {
+          delimiters: [
+            { left: '$$', right: '$$', display: true },
+            { left: '$', right: '$', display: false },
+          ],
+        })
+      "
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <a href="../index.html" class="nav-name">Uday Sharma</a>
+        <div class="nav-links">
+          <a href="../index.html" class="active">about</a>
+          <a href="../experience.html">experience + projects</a>
+          <a href="../publications.html">research + academic</a>
+          <a href="index.html">blogs + notes</a>
+          <a
+            href="../Uday_Sharma_Resume.pdf"
+            target="_blank"
+            rel="noopener"
+            class="resume-link"
+            >résumé ↗</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main class="post-container">
+      <a href="index.html" class="back-link">← Writing</a>
+
+      <!-- ══════════════════════════════════════════════
+         POST HEADER  ← EDIT everything below →
+         ══════════════════════════════════════════════ -->
+      <header class="post-header">
+        <div class="post-header-tags">
+          <span class="tag ml">Anomaly Detection</span>
+          <span class="tag physics">HEP</span>
+          <span class="tag ml">Knowledge Distillation</span>
+        </div>
+
+        <h1>How Normalizing Flows Detect New Physics at the LHC</h1>
+
+        <p class="post-subtitle">
+          A look at the density estimation model I built for my dissertation at
+          CERN &mdash; what normalizing flows are, why they work for anomaly
+          detection, and how knowledge distillation makes them fast enough to
+          matter.
+        </p>
+
+        <div class="post-header-meta">
+          <span>Uday Sharma</span>
+          <span class="dot">May 2026</span>
+          <span class="dot">12 min read</span>
+        </div>
+      </header>
+      <!-- ← END EDIT: post header → -->
+
+      <!-- ══════════════════════════════════════════════
+         POST BODY  ← Write your content below →
+         ══════════════════════════════════════════════ -->
+      <article class="post-body">
+        <p>
+          The Large Hadron Collider produces roughly 40 million proton–proton
+          collision events per second. After a hardware trigger reduces that to
+          around 100,000, a software system selects about 1,000 for permanent
+          storage. Everything else is gone. If new physics is hiding in those
+          discarded events, no amount of analysis will find it later.
+        </p>
+
+        <p>
+          This is the anomaly detection problem in high-energy physics: find the
+          unusual events before throwing them away, without knowing in advance
+          what &ldquo;unusual&rdquo; looks like. My dissertation tried to solve
+          a version of this problem using normalizing flows.
+        </p>
+
+        <h2>The Setup</h2>
+
+        <h3>Why density estimation?</h3>
+
+        <p>
+          Most anomaly detection methods need labels &mdash; examples of the
+          thing you&rsquo;re looking for. In HEP, we mostly do not have those.
+          We know what Standard Model background events look like, but
+          beyond-Standard-Model (BSM) signals are, by definition, hypothetical.
+          Any supervised approach bakes in assumptions about what we&rsquo;re
+          searching for.
+        </p>
+
+        <p>
+          A cleaner approach: learn the density of normal events, then flag
+          anything with low probability under that model. No labels required.
+          This is what normalizing flows do well.
+        </p>
+
+        <blockquote>
+          <p>
+            If you can accurately model what ordinary looks like, you get
+            anomaly detection almost for free &mdash; anything the model
+            considers unlikely is a candidate.
+          </p>
+        </blockquote>
+
+        <h3>What is a normalizing flow?</h3>
+
+        <p>
+          A normalizing flow is a generative model that learns an invertible
+          mapping between a simple base distribution (usually a standard
+          Gaussian) and the complex data distribution you care about. Given a
+          data point $x$, you can compute its exact log-likelihood using the
+          change-of-variables formula:
+        </p>
+
+        <!-- KaTeX inline math example -->
+        <p>
+          $$\log p_X(x) = \log p_Z(f(x)) + \log \left| \det \frac{\partial
+          f}{\partial x} \right|$$
+        </p>
+
+        <p>
+          Where $f$ is the learned bijection and $Z$ is the latent space. The
+          Jacobian determinant term is the key &mdash; it accounts for how $f$
+          stretches or compresses space. Making this tractable is what the
+          architecture of the flow is designed to do.
+        </p>
+
+        <h2>The Architecture</h2>
+
+        <h3>Coupling layers and the Jacobian trick</h3>
+
+        <p>
+          Computing a full Jacobian determinant for an arbitrary neural network
+          is $O(D^3)$ in the input dimension $D$ &mdash; completely infeasible
+          for LHC data. Coupling layers solve this with a structural constraint:
+          partition the input dimensions, transform one half as a function of
+          the other, leave the second half unchanged.
+        </p>
+
+        <pre><code><span class="cmt"># RealNVP-style coupling layer</span>
+<span class="kw">class</span> <span class="cls">CouplingLayer</span>(nn.Module):
+    <span class="kw">def</span> <span class="fn">forward</span>(self, x):
+        x1, x2 = x.chunk(<span class="num">2</span>, dim=<span class="num">-1</span>)
+        <span class="cmt"># scale and translate from first half</span>
+        s, t = self.net(x1).chunk(<span class="num">2</span>, dim=<span class="num">-1</span>)
+        s = torch.tanh(s)
+        <span class="cmt"># transform second half</span>
+        y2 = x2 * torch.exp(s) + t
+        <span class="cmt"># log-det is just the sum of scale factors</span>
+        log_det = s.sum(dim=<span class="num">-1</span>)
+        <span class="kw">return</span> torch.cat([x1, y2], dim=<span class="num">-1</span>), log_det</code></pre>
+
+        <p>
+          Because only <code>x2</code> changes and the Jacobian is
+          lower-triangular, the determinant reduces to the product of diagonal
+          elements &mdash; just the sum of the scale terms. $O(D)$ instead of
+          $O(D^3)$.
+        </p>
+
+        <h2>Knowledge Distillation</h2>
+
+        <h3>Making it fast enough to matter</h3>
+
+        <p>
+          A flow with enough capacity to model LHC jet data accurately is
+          expensive to evaluate. The real-time trigger systems at the LHC have
+          microsecond latency budgets and run on FPGAs. A 20-layer coupling flow
+          is never going to fit that.
+        </p>
+
+        <p>
+          Knowledge distillation compresses the knowledge of a large
+          &ldquo;teacher&rdquo; model into a smaller &ldquo;student&rdquo;
+          model. The student does not train on raw data alone; it also tries to
+          match the teacher&rsquo;s soft outputs, which carry richer information
+          than hard labels.
+        </p>
+
+        <div class="callout tip">
+          <strong>Key insight:</strong> For anomaly detection, we only need the
+          student to reproduce the teacher&rsquo;s
+          <em>anomaly scores</em> accurately, not its full generative
+          capability. This relaxation makes distillation much more effective.
+        </div>
+
+        <p>
+          We used
+          <a
+            href="https://github.com/fastmachinelearning/hls4ml"
+            target="_blank"
+            rel="noopener"
+            >hls4ml</a
+          >
+          and QKeras to quantise and synthesise the distilled student model into
+          FPGA-deployable HLS code. The resulting model fits in a realistic
+          trigger budget while preserving most of the teacher&rsquo;s detection
+          performance.
+        </p>
+
+        <h2>Results and What&rsquo;s Next</h2>
+
+        <p>
+          The distilled model achieved strong anomaly detection performance on
+          benchmark BSM signal injections (stop pair production, W&prime; boson)
+          while maintaining a manageable false-positive rate on Standard Model
+          background. The full results are in the paper currently under review
+          at Springer Nature IJSA.
+        </p>
+
+        <p>
+          What I find most interesting about this line of work is how
+          transferable it is. The same combination &mdash; density estimation
+          for anomaly scoring, distillation for deployment efficiency &mdash;
+          applies directly to financial time series, network intrusion
+          detection, and any domain with abundant &ldquo;normal&rdquo; data and
+          rare, unlabelled anomalies. The physics is specific; the method is
+          general.
+        </p>
+      </article>
+      <!-- ← END POST BODY → -->
+
+      <footer class="post-footer">
+        <p>
+          Questions or corrections? Email me at
+          <a href="mailto:itsudayy@gmail.com">itsudayy@gmail.com</a> &mdash; I
+          read everything.
+        </p>
+      </footer>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 Uday Sharma</p>
+      <div class="footer-links">
+        <a href="https://github.com/usyntest" target="_blank" rel="noopener"
+          >GitHub</a
+        >
+        <a href="mailto:itsudayy@gmail.com">Email</a>
+      </div>
+    </footer>
+  </body>
+</html>

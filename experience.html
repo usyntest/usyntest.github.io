@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Uday Sharma — experience, research, and projects."
+    />
+    <title>Experience — Uday Sharma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <a href="index.html" class="nav-name">Uday Sharma</a>
+        <div class="nav-links">
+          <a href="index.html" class="active">about</a>
+          <a href="experience.html">experience + projects</a>
+          <a href="publications.html">research + academic</a>
+          <a href="blog/index.html">blogs + notes</a>
+          <a
+            href="Uday_Sharma_Resume.pdf"
+            target="_blank"
+            rel="noopener"
+            class="resume-link"
+            >résumé ↗</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <!-- ── Work ──────────────────────────────────── -->
+      <div class="section">
+        <span class="section-label">Work Experience</span>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-title">Software Engineer</span>
+            <span class="exp-date">Mar 2026 – Present</span>
+          </div>
+          <a
+            href="https://home.cern"
+            target="_blank"
+            rel="noopener"
+            class="exp-org"
+            >CERN &mdash; Geneva, Switzerland</a
+          >
+          <ul class="exp-bullets">
+            <li>
+              Building and maintaining a unified WordPress theme and reusable UI
+              components in React and TypeScript, standardising front-end design
+              across 1,200+ web services and experiment sites at CERN.
+            </li>
+            <li>
+              Developed a Python migration tool that transitioned 1,000+ sites
+              and 100,000+ pages from Drupal to WordPress, cutting per-site time
+              from hours to under one minute.
+            </li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-title"
+              >Full Stack Developer &mdash; Summer Student</span
+            >
+            <span class="exp-date">Jun – Sep 2025</span>
+          </div>
+          <a
+            href="https://home.cern"
+            target="_blank"
+            rel="noopener"
+            class="exp-org"
+            >CERN &mdash; Geneva, Switzerland</a
+          >
+          <ul class="exp-bullets">
+            <li>
+              Developed and Deployed <strong>NeutrinoReview</strong>, a
+              full-stack AI platform (Python &amp; React) automating systematic
+              literature reviews for medical research in collaboration with
+              <strong>WHO</strong>.
+            </li>
+            <li>
+              Implemented and conducted research on LLM-based calibration and
+              screening approach to improve classification accuracy across
+              research corpora.
+            </li>
+          </ul>
+          <div class="tag-list">
+            <span class="tag nlp">NLP</span>
+            <span class="tag ml">LLMs</span>
+            <span class="tag sys">DevOps</span>
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-title">Research Engineer Intern</span>
+            <span class="exp-date">Aug 2024 – May 2025</span>
+          </div>
+          <a
+            href="https://simPPL.org"
+            target="_blank"
+            rel="noopener"
+            class="exp-org"
+            >SimPPL &mdash; Remote</a
+          >
+          <ul class="exp-bullets">
+            <li>
+              Led a team of 3 developers to develop <strong>Arbiter</strong>, a
+              SaaS social listening platform used by civic organisations
+              including Nest fact-checkers (Mongolia) and DW Germany.
+            </li>
+            <li>
+              Engineered scalable data pipelines processing 1B+ data points;
+              built semantic search using PostgreSQL and pgvector.
+            </li>
+            <li>
+              Developed NLP pipelines and an AI assistant for automated trend
+              analysis; deployed on AWS and GCP.
+            </li>
+          </ul>
+          <div class="tag-list">
+            <span class="tag nlp">NLP</span>
+            <span class="tag ml">LLMs</span>
+            <span class="tag sys">AWS · GCP</span>
+          </div>
+        </div>
+      </div>
+
+      <hr class="exp-divider" />
+
+      <!-- ── Projects ───────────────────────────────── -->
+      <div class="section">
+        <span class="section-label">Selected Projects</span>
+
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="project-name">NanoGPT</div>
+            <div class="project-stack">Python · PyTorch · Transformers</div>
+            <p class="project-desc">
+              GPT language model from scratch. Multi-head self-attention,
+              positional encoding, character-level tokenisation. 0.5M
+              parameters, trained on Shakespeare.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <div class="project-name">Micrograd</div>
+            <div class="project-stack">Python · NumPy</div>
+            <p class="project-desc">
+              Autograd engine with backpropagation over dynamic computational
+              graphs. Trained an MLP for binary classification from first
+              principles &mdash; no ML libraries.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <div class="project-name">LC-3 Virtual Machine</div>
+            <div class="project-stack">C · Assembly</div>
+            <p class="project-desc">
+              Full LC-3 architecture in C: 16-bit instruction set, trap
+              routines, fetch-execute cycle with computed GOTO. Runs real
+              assembly binaries.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <div class="project-name">NeutrinoReview</div>
+            <div class="project-stack">Python · React · Docker · LLMs</div>
+            <p class="project-desc">
+              AI platform automating systematic literature reviews at CERN.
+              Integrates ArXiv and PubMed; LLM-based screening with calibration
+              pipeline.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <div class="project-name">Mojster</div>
+            <div class="project-stack">Flask · mitmproxy · WireGuard</div>
+            <p class="project-desc">
+              Reverse-engineered the Moj social media API via encrypted traffic
+              interception. Built a concurrent analytics pipeline and Flask
+              dashboard without official access.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <div class="project-name">GGS Social</div>
+            <div class="project-stack">Django · TailwindCSS · PostgreSQL</div>
+            <p class="project-desc">
+              Full-stack social platform for college students: auth, posts,
+              comments, real-time feed. First project &mdash; the Zuckerberg
+              moment that didn&rsquo;t quite happen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 Uday Sharma</p>
+      <div class="footer-links">
+        <a href="https://github.com/usyntest" target="_blank" rel="noopener"
+          >GitHub</a
+        >
+        <a href="mailto:itsudayy@gmail.com">Email</a>
+      </div>
+    </footer>
+  </body>
+</html>
